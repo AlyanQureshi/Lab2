@@ -1,17 +1,24 @@
 <!--
-=========================================================
-Name        : news.html
-Assignment  : Lab 2 Exercise C
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
-Description : A simple HTML file.
-=========================================================
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+Name : images . html
+Assignment : Lab 2 Exercise B
+Author (s): Jerome Barcelona, Alyan Qureshi
+Submission: Jan 24th 2024
+Description : A simple HTML file .
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 -->
 <!DOCTYPE html>
 <html>
 <head>
     <title>Comprehensive HTML Page</title>
-	<!--Copy and paste remaining tags of the head section from images.html file.-->
+	<meta charset =" UTF-8">
+
+        <meta name =" description " content =" An HTML example with img tags">
+
+        <meta name =" keywords " content =" HTML, Web Development, Example, img " >
+        <meta name =" author " content =" Your Name " >
+        <link rel =" shortcut icon " href ="favicon.ico" type =" image /x - icon">
+
 </head>
 <body>
 
@@ -31,8 +38,9 @@ Description : A simple HTML file.
         <article>
             <h2>Article Title</h2>
 			
-			<p>This is a paragraph in an article section. It demonstrates text formatting, like bold, italic, and marked text.</p>
-			<!-- To emphasize specific words in the paragraph, apply appropriate HTML tags: 
+			<p>This is a paragraph in an article section. It demonstrates text formatting, like <b>bold</b>, <i>italic</i>, and <mark>marked text.</mark></p>
+			
+            <!-- To emphasize specific words in the paragraph, apply appropriate HTML tags: 
 			<strong> or <b> for bold text, 
 			<em> or <i> for italic text, and
 			<mark> for highlighted text. 
@@ -40,9 +48,9 @@ Description : A simple HTML file.
 
             <p>Here's a quotation:</p>
             <blockquote cite="http://example.com">
-                This is a blockquote, a section that quotes content from another source.
+                <i>This is a blockquote, a section that quotes content from another source.</i>
             </blockquote>
-            <p>The article section typically contains text, images, and other content that forms an independent part of a document.</p>
+            <p>The article section typically contains <mark><b>text, images, and other content </b></mark>that forms an independent part of a document.</p>
         </article>
     </section>
 
@@ -52,15 +60,17 @@ Description : A simple HTML file.
         <ol>
             <li>First item</li>
             <li>Second item</li>
-			<!--Make a sub-ordered list here-->
-            <li>Third item</li>
+			    <ol><li>Third item</li></ol><!--Make a sub-ordered list here-->
+            
         </ol>
         <p>Unordered List:</p>
         <ul>
             <li>Bullet item</li>
-			<!--Make a sub-unordered list here-->
-            <li>Another bullet item</li>
-            <li>Yet another bullet item</li>
+			<ul>
+                <li>Another bullet item</li>
+                <li>Yet another bullet item</li>
+            </ul><!--Make a sub-unordered list here-->
+            
         </ul>
     </section>
 
@@ -74,7 +84,7 @@ Description : A simple HTML file.
             <dt>HTML</dt>
             <dd>Hypertext Markup Language.</dd>
 			<dt>CSS</dt>
-            <dd><!--Add CSS definition here--></dd>
+            <dd>Cascading Style Sheets</dd><!--Added CSS definition-->
         </dl>
 		
         
@@ -104,19 +114,20 @@ Description : A simple HTML file.
 			<tfoot>
 				<tr>
 					<td>Total</td>
-					<td><!--Put column total here--></td>
-					<td><!--Put column total here--></td>
+					<td>$3800</td><!--Put column total here-->
+					<td>$2700</td><!--Put column total here-->
 				</tr>
 			</tfoot>
         </table>
 		
 		<h3>Images:</h3>
         <p>Adding an image:</p>
-        <img src="example.jpg" alt="Example Image"> <!--Fix addressing issue-->
+        <img src="images/example.jpg" alt="Example Image"> <!--Fix addressing issue-->
     </section>
 
     <footer>
-        <p>Footer content, like contact info or copyrights.</p>
+        <!--<p>Footer content, like contact info or copyrights.</p>-->
+        <p>Copy Right Alyan Qureshi, Jerome Barcelona</p>
 		<!--Comment out the above p tag and add a new p tag under this comment.
 			The new p tag must contain {Copy right + your names}.-->	
     </footer>
